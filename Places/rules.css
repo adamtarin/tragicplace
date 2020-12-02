@@ -1,0 +1,182 @@
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+body {
+  background-color: black;
+  min-height: 100%;
+  display: grid;
+  margin: 0;
+  line-height: 1.5em;
+  font-family: 'Helvetica', 'Arimo', 'Arial', sans-serif;
+}
+
+* {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+p {
+    letter-spacing: .025em;
+    margin-bottom: 1em;
+    color: white;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h3 {
+
+  font-family: 'Teko', sans-serif;
+  margin-top: 40px;
+  margin-left: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: .025em;
+  color:#f7c156;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Helvetica, sans-serif;
+  letter-spacing: .025em;
+  color:#aa5780;
+  margin-top: 1em;
+}
+
+
+h5 {
+  font-size: 1.1rem;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: .025em;
+  color:#aa5780;
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+  ul li {
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  .m-col-12 {
+    width: 100%;
+    padding: 10%;
+  }
+
+
+}
+
+
+.iframe-container {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.iframe-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.footer {
+  text-align: center;
+  margin-top: 80px;
+  height: 70px;
+  }
+
+.space{
+  padding-top:20px;
+  color:red;
+  height: 100%;
+  transform: scale(1.50);
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
